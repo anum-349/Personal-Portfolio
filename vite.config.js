@@ -1,0 +1,8 @@
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+
+// base "./" lets the build work on GitHub Pages / any static host subpath
+export default defineConfig({
+  plugins: [react()],
+  base: "./",
+});
