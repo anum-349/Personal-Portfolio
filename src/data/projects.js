@@ -70,7 +70,7 @@ export const projects = [
     highlights: ['Role-based dashboards', 'Next.js frontend, Node.js API', 'PostgreSQL database'],
     stack: ['Next.js', 'Node.js', 'PostgreSQL'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/Smart-Learning-Management-System' }],
-    demo: '',
+    demo: 'https://youtu.be/-kzaw7oxHyc?si=WYg9z5R4HCZznxmo',
   },
   {
     id: 'car-mechanic',
@@ -167,6 +167,6 @@ export const projects = [
     highlights: ['Pure animation', 'Made as a gift'],
     stack: ['Animation', 'Python'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/Happy_Birthday_Animation' }],
-    demo: '',
+    demo: 'https://youtu.be/GI2UT9lpWuw?si=pxzBJr6tI1AO0dK0',
   },
 ]

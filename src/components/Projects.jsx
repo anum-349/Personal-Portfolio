@@ -36,8 +36,16 @@ function Panel({ p, autoplay }) {
         <ul className="points">{p.highlights.map((h) => <li key={h}>{h}</li>)}</ul>
         <ul className="stack">{p.stack.map((s) => <li key={s}>{s}</li>)}</ul>
         <div className="panel-actions">
-          <button className="btn primary" onClick={() => setVideo(!video)}>{video ? 'Back to drawing' : 'Watch demo'}</button>
-          {p.links.map((l) => <a key={l.url} className="btn" href={l.url} target="_blank" rel="noreferrer">{l.label}</a>)}
+          {p.links.map((l) =>
+            <>
+              {
+                l.label != 'Visit site' ?
+                  <button className="btn primary" onClick={() => setVideo(!video)}>{video ? 'Back to drawing' : 'Watch demo'}</button>
+                  : null
+              }
+              <a key={l.url} className="btn" href={l.url} target="_blank" rel="noreferrer">{l.label}</a>
+            </>
+          )}
         </div>
       </div>
     </article>
