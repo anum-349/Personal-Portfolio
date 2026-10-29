@@ -14,21 +14,16 @@ function Panel({ p, autoplay }) {
   const id = youtubeId(p.demo)
   return (
     <article className="panel" aria-live="polite">
-      {video ? (
-        <div className="video">
-          {id ? (
-            <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`} title={`${p.title} demo video`} allow="accelerometer; encrypted-media; picture-in-picture" allowFullScreen />
-          ) : (
-            <div className="video-empty">
-              <Thumb kind={p.thumb} tone={p.tone} />
-              <p>The demo video for {p.title} is still being edited. More screen recordings live on my YouTube channel.</p>
-              <a className="btn primary" href={site.youtube} target="_blank" rel="noreferrer">Open YouTube channel</a>
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="panel-art"><Thumb kind={p.thumb} tone={p.tone} /></div>
-      )}
+      <div className="video">
+        {id ? (
+          <iframe src={`https://www.youtube-nocookie.com/embed/${id}?rel=0`} title={`${p.title} demo video`} allow="accelerometer; encrypted-media; picture-in-picture" allowFullScreen />
+        ) : (
+          <div className="video-empty">
+            <p>The demo video for {p.title} is still being edited. More screen recordings live on my YouTube channel.</p>
+            <a className="btn primary" href={site.youtube} target="_blank" rel="noreferrer">Open YouTube channel</a>
+          </div>
+        )}
+      </div>
       <div className="panel-body">
         <span className="kind">{p.kind}</span>
         <h3>{p.title}</h3>
@@ -38,11 +33,6 @@ function Panel({ p, autoplay }) {
         <div className="panel-actions">
           {p.links.map((l) =>
             <>
-              {
-                l.label != 'Visit site' ?
-                  <button className="btn primary" onClick={() => setVideo(!video)}>{video ? 'Back to drawing' : 'Watch demo'}</button>
-                  : null
-              }
               <a key={l.url} className="btn" href={l.url} target="_blank" rel="noreferrer">{l.label}</a>
             </>
           )}

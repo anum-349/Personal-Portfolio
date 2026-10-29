@@ -15,8 +15,7 @@ export const projects = [
     highlights: ['SBERT case linking reached 89.2% MAP', 'Entity extraction (NER) reached 84.7% F1', 'Usability testing (SUS) scored 81 / 100', 'FastAPI backend covered by pytest, Electron.js desktop client'],
     stack: ['Python', 'FastAPI', 'Electron.js', 'NLP', 'ML'],
     links: [
-      { label: 'Backend', url: 'https://github.com/anum-349/Criminal-Investigation-Assistant-Backend' },
-      { label: 'Frontend', url: 'https://github.com/anum-349/Criminal-Investigation-Assistant' },
+      { label: 'Code', url: 'https://github.com/anum-349/Criminal-Investigation-Assistant' },
     ],
     demo: '',
   },
@@ -31,7 +30,7 @@ export const projects = [
     highlights: ['35% better query accuracy than keyword search', 'Embedding optimisation for sharper retrieval', 'LangChain pipeline from question to grounded answer'],
     stack: ['Python', 'FAISS', 'RAG', 'LangChain'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/SmartDoc-Retriever' }],
-    demo: '',
+    demo: 'https://youtu.be/pphmYK6nSwM',
   },
   {
     id: 'roomero',
@@ -95,7 +94,7 @@ export const projects = [
     highlights: ['TF-IDF + Logistic Regression classifier', 'Cosine similarity retrieval', 'RoBERTa fallback for unseen questions', 'Streamlit frontend'],
     stack: ['Python', 'scikit-learn', 'RoBERTa', 'Streamlit'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/Career-Guidance-Chatbot' }],
-    demo: '',
+    demo: 'https://youtu.be/_QKJDDjllEM',
   },
   {
     id: 'stock-screener',
@@ -107,7 +106,7 @@ export const projects = [
     highlights: ['SMA crossover, RSI and volume-surge signals', 'Ranked results on a live dashboard', 'Market data through yfinance'],
     stack: ['Python', 'Flask', 'yfinance'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/StockScreenerProject' }],
-    demo: '',
+    demo: 'https://youtu.be/Eny6KQ6o-ek',
   },
   {
     id: 'globe',
@@ -119,7 +118,7 @@ export const projects = [
     highlights: ['Draggable 3D globe', 'Animated rays linking out to projects'],
     stack: ['JavaScript', '3JS'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/Interactive-3D-Globe-with-Project-Rays' }],
-    demo: '',
+    demo: 'https://youtu.be/XStY4zTWhN4',
   },
   {
     id: 'musetales-art',
@@ -131,7 +130,7 @@ export const projects = [
     highlights: ['Built around artwork', 'Where the two benches overlap'],
     stack: ['Web', 'React', 'MongoDB', 'Express', 'Node.js'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/MuseTales-Art' }],
-    demo: '',
+    demo: 'https://youtu.be/puRZyVcWv7c',
   },
   {
     id: 'mini-shell',
@@ -143,7 +142,7 @@ export const projects = [
     highlights: ['Built to learn how operating systems run programs', 'Command parsing and execution'],
     stack: ['Operating systems', 'CLI', 'Python'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/mini-shell' }],
-    demo: '',
+    demo: 'https://youtu.be/tseLP5_R-O0',
   },
   {
     id: 'spare-parts',
@@ -155,7 +154,7 @@ export const projects = [
     highlights: ['Catalogue-style browsing', 'Structured data for parts'],
     stack: ['PostgreSql', 'Python', 'FastApis', 'React'],
     links: [{ label: 'Code', url: 'https://github.com/anum-349/spare_parts' }],
-    demo: '',
+    demo: 'https://youtu.be/roY8YZ-cd48',
   },
   {
     id: 'birthday',

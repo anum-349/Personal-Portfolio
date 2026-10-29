@@ -268,24 +268,6 @@ h1, h2, h3, p { margin: 0; }
 .tool-row li:hover { background: var(--ink); color: var(--bg); transform: rotate(-2deg); }
 @media (max-width: 700px) { .tool-row { grid-template-columns: 1fr; gap: 0.7rem; } }
 
-/* ───────────── studio ───────────── */
-.studio { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.3fr); gap: clamp(1.5rem, 4vw, 3.5rem); margin-top: 3rem; align-items: start; }
-.crafts { display: grid; gap: 1.8rem; }
-.crafts h3 { font-family: var(--font-hand); font-size: 2rem; font-weight: 600; color: var(--accent); line-height: 1; }
-.crafts p { color: var(--mute); margin-top: 0.4rem; max-width: 40ch; }
-.pad-tools { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem 1.4rem; margin-bottom: 0.9rem; }
-.swatches { display: flex; gap: 0.5rem; }
-.sw { width: 28px; height: 28px; border-radius: 50%; border: 2px solid var(--bg); background: var(--c); cursor: pointer; box-shadow: 0 0 0 1.5px var(--line); transition: transform 0.15s; }
-.sw:hover { transform: scale(1.12); }
-.sw.on { box-shadow: 0 0 0 2px var(--ink); transform: scale(1.12); }
-.size { display: inline-flex; align-items: center; gap: 0.6rem; font-size: 0.9rem; color: var(--mute); }
-.size input { accent-color: var(--accent); width: 110px; }
-.canvas-wrap { position: relative; aspect-ratio: 4 / 3; background: var(--card); border: 1.5px solid var(--ink); border-radius: var(--wobble); box-shadow: 6px 6px 0 var(--line); overflow: hidden;
-  background-image: repeating-linear-gradient(transparent 0 31px, var(--grid) 31px 32px); }
-.canvas-wrap canvas { width: 100%; height: 100%; touch-action: none; cursor: crosshair; }
-.pad-empty { position: absolute; inset: 0; display: grid; place-items: center; pointer-events: none; font-family: var(--font-hand); font-size: 1.7rem; color: var(--mute); text-align: center; padding: 1rem; }
-@media (max-width: 860px) { .studio { grid-template-columns: 1fr; } }
-
 /* ───────────── contact ───────────── */
 .contact { padding-bottom: clamp(4rem, 9vw, 8rem); }
 .big { font-family: var(--font-display); font-weight: 520; font-variation-settings: 'SOFT' 100, 'WONK' 1; font-size: clamp(2.4rem, 6.4vw, 5.2rem); line-height: 1.02; letter-spacing: -0.03em; max-width: 15ch; }
