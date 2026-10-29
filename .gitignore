@@ -7,8 +7,6 @@ dist/
 dist-ssr/
 
 # Environment variables and secrets
-.env
-.env.*
 !.env.example
 
 # Debug logs
@@ -31,7 +29,6 @@ Thumbs.db
 *.local
 
 # Editor settings
-.vscode/*
 !.vscode/extensions.json
 .idea/
 *.swp
@@ -49,3 +46,4 @@ coverage/
 # Temporary files
 tmp/
 temp/
+config.bat
